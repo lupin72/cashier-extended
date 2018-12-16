@@ -1,0 +1,12 @@
+{
+    "name": "pierpaologorelli/horsetap-braintree",
+    "description": "This package extends the cashier-braintree functionalities",
+    "authors": [
+        {
+            "name": "Pierpaolo Gorelli",
+            "email": "pierpaolo.gorelli@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
