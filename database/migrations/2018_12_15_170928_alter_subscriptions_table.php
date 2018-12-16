@@ -15,7 +15,7 @@ class AlterSubscriptionsTable extends Migration
     {
         Schema::table('subscription', function ( $table) {
           $table->timestamp('firstBillingDate')->nullable();
-          $table->timestamp('ends_at')->nullable();
+          $table->timestamp('nextBillingDate')->nullable();
         }
     }
 
@@ -28,6 +28,7 @@ class AlterSubscriptionsTable extends Migration
     {
       Schema::table('subscription', function (Blueprint $table) {
         $table->dropColumn('firstBillingDate');
+        $table->dropColumn('nextBillingDate');
       });
     }
 }
